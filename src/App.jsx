@@ -14,18 +14,7 @@ export function TodoComponent(){
   const [todos, setTodos] = useState (() => {
   const saved = localStorage.getItem("todos");
   return saved ? JSON.parse(saved) : [
-  {
-    name: 'Take out the laundry',
-    id: 1
-  },
-  {
-    name: 'Take out the trash',
-    id: 2
-  },
-  {
-    name: 'Learn Js Function',
-    id: 3
-  },
+
   ]; 
 });
 useEffect(() => {
